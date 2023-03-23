@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from 'react';
+import './assets/css/App.css';
+import Board from './components/Board';
+import Footer from './components/Footer';
+import Header from './components/Header';
 
-function App() {
+const App = () => {
+  const [isDarkMode, setIsDarkMode] = useState(true);
+
+  useEffect(() => {
+    if (isDarkMode) {
+      document.body.classList.add('dark');
+    } else {
+      document.body.classList.remove('dark');
+    }
+  }, [isDarkMode]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='h-screen bg-slate-50'>
+      <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+      <Board />
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
