@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 
 const App = () => {
-  const [isDarkMode, setIsDarkMode] = useState(true);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
     if (isDarkMode) {
