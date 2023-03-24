@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import CalculateWinner from './CalculateWinner';
+import calculateWinner from './CalculateWinner';
 import GameDisplay from './GameDisplay';
 import Square from './Square';
 
@@ -8,7 +8,7 @@ const Board = () => {
     const [squares, setSquares] = useState(Array(9).fill(null));
 
     const handleClick = (i) => {
-        if (squares[i] || CalculateWinner(squares)) {
+        if (squares[i] || calculateWinner(squares)) {
             return;
         }
 
@@ -43,7 +43,7 @@ const Board = () => {
             </div>
             <div className="btn-container flex justify-center py-12">
                 <button
-                    className='justify-center bg-slate-300 text-slate-800 hover:bg-slate-400 dark:bg-slate-600 dark:text-slate-50 dark:hover:bg-slate-500 px-4 py-2 rounded font-bold'
+                    className='justify-center bg-slate-300 text-slate-800 hover:bg-red-500 hover:text-slate-50 dark:bg-slate-600 dark:text-slate-50 dark:hover:bg-red-500 px-4 py-2 rounded font-bold'
                     onClick={() => handleReset()}
                 >
                     Reset Game

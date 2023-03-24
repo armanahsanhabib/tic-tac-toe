@@ -16,10 +16,12 @@ const App = () => {
   }, [isDarkMode]);
 
   return (
-    <div className='h-screen bg-slate-50'>
-      <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-      <Board />
-      <Footer />
+    <div className='xl:flex xl:h-screen'>
+      <div className='xl:w-3/12 mx-auto my-auto xl:shadow-lg xl:outline xl:outline-2 xl:outline-slate-300 xl:rounded-xl overflow-hidden'>
+        <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+        <Board />
+        <Footer />
+      </div>
     </div>
   );
 };

@@ -4,7 +4,7 @@ import logoImage from '../assets/img/logo.png';
 
 const Header = (props) => {
     return (
-        <header className='bg-slate-50 dark:bg-slate-800 sticky top-0 left-0 right-0 shadow-lg z-50'>
+        <header className='bg-slate-50 dark:bg-slate-800 shadow-lg'>
             <div className="container flex items-center px-6 py-4">
                 <img
                     src={logoImage}
