@@ -1,10 +1,10 @@
-## Live preview
-
-`Live Preview at: https://armanahsanhabib.github.io/tic-tac-toe/`
-
 # Tic-Tac-Toe
 
 This is a simple Tic-Tac-Toe game built with React.js and Tailwind CSS.
+
+## Live preview
+
+Live Preview at: https://armanahsanhabib.github.io/tic-tac-toe/
 
 ## Features
 
@@ -17,22 +17,36 @@ This is a simple Tic-Tac-Toe game built with React.js and Tailwind CSS.
 ### Installation
 
 Clone the repository to your local machine:
-`git clone https://github.com/your-username/tic-tac-toe.git`
+
+```
+git clone https://github.com/your-username/tic-tac-toe.git
+```
 
 Navigate to the project directory:
-`cd tic-tac-toe`
+
+```
+cd tic-tac-toe
+```
 
 Install the required dependencies:
-`npm install`
+
+```
+npm install
+```
 
 ### Usage
 
 Start the development server:
-`npm start`
+
+```
+npm start
+```
 
 ### Open the app in your browser:
 
-`http://localhost:3000`
+```
+http://localhost:3000
+```
 
 ### Play the game! 😊
 
